@@ -1,0 +1,241 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:wght@100;300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Recursive:wght@300..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:wght@100;300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:wght@100;300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins','Recursive','Montserrat', 'Source Sans 3', Sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background: #232830;
+    color: #f1f1f1;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    margin: 30px;
+}
+
+nav .container{
+    max-width: 1236px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 0 auto;
+    height: 36px;
+}
+
+.container ul{
+    display: flex;
+}
+
+.container ul li{
+    margin-left: 20px;
+}
+
+.container h1{
+    font-weight: 400;
+    line-height: 45px;
+    font-size: 30px;
+    pointer-events: none;
+}
+
+li a{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #fff;
+}
+li a:hover{
+    color: #b8b8b8;
+}
+
+/* hero section */
+
+.hero .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    padding: 10px 10px;
+}
+
+.hero .container .text h2{
+    font-family: 'Recursive', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 71px;
+    line-height: 82.2px;
+    color: #FF7575;
+    margin-top: 11px;
+    text-align: center;
+}
+.hero .container .text p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 43.5px;
+    color: #fff;
+    text-align: center;
+    margin: 7px 0;
+}
+
+/* tab layout */
+
+.tab{
+    border-top: 3px solid #4D4D4D;
+    margin: 30px 0;
+}
+.tab .container{
+    max-width: 1236px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+.tab .container span{
+    font-family: 'Recursive', sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    font-style: italic;
+    line-height: 32.4px;
+}
+
+/* Article Listing */
+
+.article-listing{
+    margin: 100px 0;
+}
+.article-listing .container{
+    max-width: 1236px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    gap: 20px;
+    grid-auto-flow: row;
+    padding: 15px;
+   
+}
+
+.article-listing .container .item{
+    border-radius: 22px;
+    overflow: hidden;
+    background: #fff;
+    color: #252930;
+    padding: 20px;
+    margin: 0 auto; 
+}
+.article-listing .container .item img{
+    width: 337.08px;
+    height: 160px;
+    border-radius: 22px;
+}
+
+.article-listing .container .item h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 28.5px;
+    margin: 10px 0;
+}
+.article-listing .container .item p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0F1217;
+    
+}
+
+.article-listing .container .item .inner-group{
+    margin-top: 30px;
+
+}
+.article-listing .container .item .inner-group span {
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+}
+
+/* pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    width: 100%;
+}
+
+.pagination a{
+    display: inline-block;
+    margin: 0 15px;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    font-style: italic;
+    color: #909090;
+}
+
+.pagination a.active {
+    width: 30px !important;
+    color: #FF7575;
+    border-top: 2px solid #FF7575;
+}
+
+/* footer */
+footer{
+    border-top: 3px solid #4D4D4D;
+    margin: 30px 0;
+}
+footer .container{
+    max-width: 1236px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+footer .container .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .container .logo h1{
+    font-weight: 400;
+    line-height: 45px;
+    font-size: 30px;
+    margin-right: 10px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+
+footer .container .logo span{
+    padding: 5px;
+    background: #4699E0;
+    border-radius: 5px;
+}
+footer .container .right{
+    padding: 5px;
+    background: #4699E0;
+    border-radius: 5px;
+}
